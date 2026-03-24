@@ -1,9 +1,10 @@
 import WorkExperience from "./sub-section/WorkExperience";
+import SectionHeader from "../components/SectionHeader";
 import { experiences } from "../src/data/experiences";
 
 export const Experience = () => {
     return <section>
-        <h1 className = "font-bold text-xl mb-2">Experience</h1>
+        <SectionHeader>Experience</SectionHeader>
         {
             
             experiences.map(
