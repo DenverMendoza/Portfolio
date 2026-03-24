@@ -11,13 +11,13 @@ function App() {
 
   return (
   <div>
-
-
-  <Navbar />
   
 
   <Layout>
-    <Hero></Hero>
+    <div className='mb-7'>
+      <Hero></Hero>
+    </div>
+    
     <div className='flex gap-4'>
       <div className="w-3/4">
         <About className="w-full"></About>

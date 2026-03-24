@@ -1,10 +1,9 @@
-function Button ({label, onClick, children, variant, isDisabled}) {
-    const className = `${variant} ${isDisabled ? 'disabled' : ''}`;
+function Button ({onClick, children, variant}) {
     return <button 
         onClick={onClick}
-        className={className}
+        className={`flex gap-2 items-center px-3 py-1 rounded-sm drop-shadow-md ${variant}
+                    transition-all duration-300 hover:-translate-y-0.5`}
     >
-        {label}
         {children}
     </button>
 }
