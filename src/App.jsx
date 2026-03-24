@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Navbar} from '../components/navbar'
 import { Experience }  from '../sections/Experience'
 import { About } from '../sections/About'
+import { TechStack } from '../sections/TechStack'
 import  Button  from '../components/Button'
 import Layout from '../components/Layout'
 import { Hero } from '../sections/Hero'
@@ -11,40 +12,22 @@ function App() {
 
   return (
   <div>
-
-
-  <Navbar />
-  
-
-  <Layout>
-    <Hero></Hero>
-    <div className='flex gap-4'>
-      <div className="w-3/4">
-        <About className="w-full"></About>
-      </div>
-      <div className="w-1/4">
-        <Experience></Experience>
-      </div>
-    </div>
-  </Layout>
-      
-
+    <Navbar />
     
-    
-
-    <Button
-      variant = "border-solid border-3 border-black"
-      label = {'Click Me'}
-      onClick={() => setCount((count) => count + 1)}
-    >
-      count is {count}
-    </Button>
+    <Layout>
+      <Hero></Hero>
       
-    <Button
-      onClick={() => window.open('https://google.com', '_blank')}
-    >
-      Open Google
-    </Button>
+      <div className='flex gap-4'>
+        <div className="w-3/4">
+          <About className="w-full"></About>
+          <TechStack className="w-full"></TechStack>
+        </div>
+        <div className="w-1/4">
+          <Experience></Experience>
+        </div>
+      </div>
+
+    </Layout>
   </div>
   )
 }
