@@ -28,7 +28,7 @@ export const Hero = () => {
               onClick={() => {
                 const link = document.createElement('a');
                 link.href = resumeFile;
-                link.download = "resume.pdf";
+                link.download = `${mydata.myName.replace(" ", "")}-Resume.pdf`;
                 link.click();
               }}
               variant={"border-solid border-1 border-black"}
