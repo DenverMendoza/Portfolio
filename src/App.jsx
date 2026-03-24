@@ -11,38 +11,21 @@ function App() {
   return (
   <div>
   
-
-  <Layout>
-    <div className='mb-7'>
-      <Hero></Hero>
-    </div>
-    
-    <div className='flex gap-4'>
-      <div className="w-3/4">
-        <About className="w-full"></About>
-      </div>
-      <div className="w-1/4">
-        <Experience></Experience>
-      </div>
-    </div>
-  </Layout>
-      
-
-    
     <Layout>
-      <Hero></Hero>
+      <div className='mb-7'>
+        <Hero></Hero>
+      </div>
       
       <div className='flex gap-4'>
         <div className="w-3/4">
           <About className="w-full"></About>
-          <TechStack className="w-full"></TechStack>
         </div>
         <div className="w-1/4">
           <Experience></Experience>
         </div>
       </div>
-
     </Layout>
+  
   </div>
   )
 }
