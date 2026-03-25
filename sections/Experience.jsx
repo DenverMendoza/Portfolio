@@ -3,7 +3,7 @@ import SectionHeader from "../components/SectionHeader";
 import { experiences } from "../src/data/experiences";
 
 export const Experience = () => {
-    return <section>
+    return <section className="p-4">
         <SectionHeader>Experience</SectionHeader>
         {
             

@@ -16,10 +16,10 @@ function App() {
         <Hero></Hero>
       </div>
       
-      <div className="grid grid-cols-4 gap-4">
-          <div className='col-span-3 border-solid border-1 border-black'><About></About></div>
-          <div className='col-span-1 border-solid border-1 border-black'><Experience></Experience></div>
-          <div className='col-span-3 border-solid border-1 border-black'><TechStack></TechStack></div>
+      <div className="grid grid-cols-6 gap-3">
+          <div className='col-span-4'><About></About></div>
+          <div className='col-span-2 row-span-2'><Experience></Experience></div>
+          <div className='col-span-4'><TechStack></TechStack></div>
           <div className='hidden'><Experience></Experience></div>
           
       </div>

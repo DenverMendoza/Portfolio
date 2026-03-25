@@ -10,7 +10,7 @@ function WorkExperience({ Company, Position, Year, Description }) {
             </div>
             <div className="grow pt-0.5 pb-4">
                 <h3 className="text-sm font-bold">{Position}</h3>
-                <div className="flex text-xs justify-between gap-2">
+                <div className="flex text-xs justify-between gap-3">
                     <p className="grow">{Company}</p>
                     <p>{Year}</p>
                 </div>  
